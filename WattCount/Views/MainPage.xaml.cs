@@ -1,15 +1,18 @@
-﻿namespace WattCount.Views
+﻿using WattCount.ViewModels;
+using WattCount.Views;
+
+namespace WattCount.Views
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-       
-        public MainPage()
-        {
+        public MainPage(MainPageViewModel vm) {
             InitializeComponent();
+            this.BindingContext = vm;
         }
 
-        
+
     }
 
 }
+
+
