@@ -14,7 +14,7 @@
                 Aspect="AspectFit" />
 
             <Label
-                Text="WattCount!"
+                Text="WattCount"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
