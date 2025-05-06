@@ -7,12 +7,11 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            
+
             <Image
                 Source="twg_with_border.png"
                 HeightRequest="185"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a hovercraft number nine" />
+                Aspect="AspectFit" />
 
             <Label
                 Text="WattCount!"
