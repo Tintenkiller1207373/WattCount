@@ -21,7 +21,9 @@
 
             <Button
                 Text="START" 
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" 
+                Command="{Binding SendgoToSpielstandPage}"/>
+
         </VerticalStackLayout>
     </ScrollView>
 
