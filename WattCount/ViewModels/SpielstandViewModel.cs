@@ -22,9 +22,9 @@ namespace WattCount.ViewModels
         // Team 1 Punkte
         [RelayCommand]
         public async Task AddTwoA() {
-            for (int i = 0; i < TeamA.Length; i++) {
-                if (TeamA[i] == 0) {
-                    TeamA[i] = 2;
+            for (int i = 0; i < _teamA.Length; i++) {
+                if (_teamA[i] == 0) {
+                    _teamA[i] = 2;
                     break;
                 }
             }
@@ -32,9 +32,9 @@ namespace WattCount.ViewModels
 
         [RelayCommand]
         public async Task AddThreeA() {
-            for (int i = 0; i < TeamA.Length; i++) {
-                if (TeamA[i] == 0) {
-                    TeamA[i] = 3;
+            for (int i = 0; i < _teamA.Length; i++) {
+                if (_teamA[i] == 0) {
+                    _teamA[i] = 3;
                     break;
                 }
             }
@@ -42,9 +42,9 @@ namespace WattCount.ViewModels
 
         [RelayCommand]
         public async Task AddFourA() {
-            for (int i = 0; i < TeamA.Length; i++) {
-                if (TeamA[i] == 0) {
-                    TeamA[i] = 4;
+            for (int i = 0; i < _teamA.Length; i++) {
+                if (_teamA[i] == 0) {
+                    _teamA[i] = 4;
                     break;
                 }
             }
@@ -52,9 +52,9 @@ namespace WattCount.ViewModels
 
         [RelayCommand]
         public async Task AddFiveA() {
-            for (int i = 0; i < TeamA.Length; i++) {
-                if (TeamA[i] == 0) {
-                    TeamA[i] = 5;
+            for (int i = 0; i < _teamA.Length; i++) {
+                if (_teamA[i] == 0) {
+                    _teamA[i] = 5;
                     break;
                 }
             }
@@ -62,9 +62,9 @@ namespace WattCount.ViewModels
 
         [RelayCommand]
         public async Task AddSixA() {
-            for (int i = 0; i < TeamA.Length; i++) {
-                if (TeamA[i] == 0) {
-                    TeamA[i] = 6;
+            for (int i = 0; i < _teamA.Length; i++) {
+                if (_teamA[i] == 0) {
+                    _teamA[i] = 6;
                     break;
                 }
             }
@@ -72,9 +72,9 @@ namespace WattCount.ViewModels
 
         [RelayCommand]
         public async Task AddSevenA() {
-            for (int i = 0; i < TeamA.Length; i++) {
-                if (TeamA[i] == 0) {
-                    TeamA[i] = 7;
+            for (int i = 0; i < _teamA.Length; i++) {
+                if (_teamA[i] == 0) {
+                    _teamA[i] = 7;
                     break;
                 }
             }
@@ -84,9 +84,9 @@ namespace WattCount.ViewModels
         // Team 2 Punkte
         [RelayCommand]
         public async Task AddTwoB() {
-            for (int i = 0; i < TeamB.Length; i++) {
-                if (TeamB[i] == 0) {
-                    TeamB[i] = 2;
+            for (int i = 0; i < _teamB.Length; i++) {
+                if (_teamB[i] == 0) {
+                    _teamB[i] = 2;
                     break;
                 }
             }
@@ -94,9 +94,9 @@ namespace WattCount.ViewModels
 
         [RelayCommand]
         public async Task AddThreeB() {
-            for (int i = 0; i < TeamB.Length; i++) {
-                if (TeamB[i] == 0) {
-                    TeamB[i] = 3;
+            for (int i = 0; i < _teamB.Length; i++) {
+                if (_teamB[i] == 0) {
+                    _teamB[i] = 3;
                     break;
                 }
             }
@@ -104,9 +104,9 @@ namespace WattCount.ViewModels
 
         [RelayCommand]
         public async Task AddFourB() {
-            for (int i = 0; i < TeamB.Length; i++) {
-                if (TeamB[i] == 0) {
-                    TeamB[i] = 4;
+            for (int i = 0; i < _teamB.Length; i++) {
+                if (_teamB[i] == 0) {
+                    _teamB[i] = 4;
                     break;
                 }
             }
@@ -114,9 +114,9 @@ namespace WattCount.ViewModels
 
         [RelayCommand]
         public async Task AddFiveB() {
-            for (int i = 0; i < TeamB.Length; i++) {
-                if (TeamB[i] == 0) {
-                    TeamB[i] = 5;
+            for (int i = 0; i < _teamB.Length; i++) {
+                if (_teamB[i] == 0) {
+                    _teamB[i] = 5;
                     break;
                 }
             }
@@ -124,9 +124,9 @@ namespace WattCount.ViewModels
 
         [RelayCommand]
         public async Task AddSixB() {
-            for (int i = 0; i < TeamB.Length; i++) {
-                if (TeamB[i] == 0) {
-                    TeamB[i] = 6;
+            for (int i = 0; i < _teamB.Length; i++) {
+                if (_teamB[i] == 0) {
+                    _teamB[i] = 6;
                     break;
                 }
             }
@@ -134,9 +134,9 @@ namespace WattCount.ViewModels
 
         [RelayCommand]
         public async Task AddSevenB() {
-            for (int i = 0; i < TeamB.Length; i++) {
-                if (TeamB[i] == 0) {
-                    TeamB[i] = 7;
+            for (int i = 0; i < _teamB.Length; i++) {
+                if (_teamB[i] == 0) {
+                    _teamB[i] = 7;
                     break;
                 }
             }
