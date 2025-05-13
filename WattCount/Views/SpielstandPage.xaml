@@ -4,53 +4,141 @@
              x:Class="WattCount.Views.SpielstandPage"
              Title="">
 
-    <Label
+    
+
+    
+
+    <Grid RowDefinitions="3*, 2*, 1*, 1*, 1*, 1*, 1*, 1*, 4*, 4*" ColumnDefinitions="1*, 1*">
+
+
+        <Label
         Text="WattCount"
         TextColor="Red"
         HorizontalOptions="Center"
         FontSize="32"
+        Grid.ColumnSpan="2"
        />
 
-    <Grid RowDefinitions="2*, 2*, 2*, 2*, 2*, 2*" ColumnDefinitions="1*, 1*, 1*, 1*">
+        <Label 
+             Text="Team1"
+            Grid.Row="1" Grid.Column="0"
+
+            VerticalOptions="Center"
+            HorizontalOptions="Center" 
+/>
+
+        <Label 
+            Text="Team2"
+           Grid.Row="1" Grid.Column="1"
+
+           VerticalOptions="Center"
+           HorizontalOptions="Center" 
+           />
         
         
-         <Label  
-             Text="Punkte"
-             Grid.Row="0" Grid.Column="0"
-             VerticalOptions="Center"
-             HorizontalOptions="End" 
-             FontAttributes="Bold"
-             Padding="10"/>
-
-
-            <Entry 
-              Text="{Binding Punkte}"
-            Placeholder="0"
-             Grid.Row="0" Grid.Column="1"
+        <Label 
+              Text="1"
+             Grid.Row="2" Grid.Column="0"
  
              VerticalOptions="Center"
-             HorizontalOptions="Start" 
+             HorizontalOptions="Center" 
  />
 
+        <Label 
+             Text="1"
+            Grid.Row="2" Grid.Column="1"
 
-            <Label  
- 
-             Text="GebDatum"
-             Grid.Row="1" Grid.Column="0"
-      
+            VerticalOptions="Center"
+            HorizontalOptions="Center" 
+            />
+
+        <Label 
+              Text="1"
+             Grid.Row="3" Grid.Column="0"
+
              VerticalOptions="Center"
-             HorizontalOptions="End" 
-             FontAttributes="Bold"
-             Padding="10"/>
+             HorizontalOptions="Center" 
+             />
 
-            <DatePicker  
- 
-             Date="{Binding Date}"
-                 Grid.Row="1" Grid.Column="1"
+        <Label 
+              Text="1"
+             Grid.Row="3" Grid.Column="1"
+
+             VerticalOptions="Center"
+             HorizontalOptions="Center" 
+             />
+
+        <Label 
+              Text="1"
+             Grid.Row="4" Grid.Column="0"
+
+             VerticalOptions="Center"
+             HorizontalOptions="Center" 
+             />
+
+        <Label 
+              Text="1"
+             Grid.Row="4" Grid.Column="1"
+
+             VerticalOptions="Center"
+             HorizontalOptions="Center" 
+             />
+
+
+        <Label 
+              Text="1"
+             Grid.Row="5" Grid.Column="0"
+
+             VerticalOptions="Center"
+             HorizontalOptions="Center" 
+             /> 
+
+        <Label 
+              Text="1"
+             Grid.Row="5" Grid.Column="1"
+
+             VerticalOptions="Center"
+             HorizontalOptions="Center" 
+             />
+
+        <Label 
+               Text="1"
+              Grid.Row="6" Grid.Column="0"
 
               VerticalOptions="Center"
-              HorizontalOptions="Start" 
-             /> 
+              HorizontalOptions="Center" 
+              />
+
+        <Label 
+               Text="1"
+              Grid.Row="6" Grid.Column="1"
+
+              VerticalOptions="Center"
+              HorizontalOptions="Center" 
+              />
+
+        <Label 
+               Text="1"
+              Grid.Row="7" Grid.Column="0"
+
+              VerticalOptions="Center"
+              HorizontalOptions="Center" 
+            />
+
+        <Label 
+               Text="1"
+              Grid.Row="7" Grid.Column="1"
+
+              VerticalOptions="Center"
+              HorizontalOptions="Center" 
+              />
+
+        <HorizontalStackLayout Grid.Row="8" Grid.Column="0">
+            
+        </HorizontalStackLayout>
+
+
+
 
     </Grid>
           
