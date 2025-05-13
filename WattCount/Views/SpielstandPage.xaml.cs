@@ -1,9 +1,14 @@
-namespace WattCount.Views;
+using WattCount.ViewModels;
+using WattCount.Views;
 
-public partial class SpielstandPage : ContentPage
-{
-	public SpielstandPage()
-	{
-		InitializeComponent();
-	}
+namespace WattCount.Views {
+    public partial class SpielstandPage : ContentPage {
+        public SpielstandPage(SpielstandViewModel vm) {
+            InitializeComponent();
+            this.BindingContext = vm;
+        }
+
+
+    }
+
 }
