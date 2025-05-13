@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
+using WattCount.ViewModels;
+using WattCount.Views;
 
 namespace WattCount;
 
@@ -19,6 +21,9 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
-		return builder.Build();
+        builder.Services.AddTransient<MainPage>();
+        builder.Services.AddTransient<MainPageViewModel>();
+
+        return builder.Build();
 	}
 }
