@@ -22,7 +22,6 @@
         <Label 
              Text="Team1"
             Grid.Row="1" Grid.Column="0"
-
             VerticalOptions="Center"
             HorizontalOptions="Center" 
 />
@@ -30,14 +29,13 @@
         <Label 
             Text="Team2"
            Grid.Row="1" Grid.Column="1"
-
            VerticalOptions="Center"
            HorizontalOptions="Center" 
            />
         
         
         <Label 
-              Text="1"
+              Text=""
              Grid.Row="2" Grid.Column="0"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
@@ -45,7 +43,7 @@
  />
 
         <Label 
-             Text="1"
+             Text=""
             Grid.Row="2" Grid.Column="1"
             VerticalOptions="Center"
             HorizontalOptions="Center" 
@@ -53,7 +51,7 @@
             />
 
         <Label 
-              Text="1"
+              Text=""
              Grid.Row="3" Grid.Column="0"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
@@ -61,7 +59,7 @@
              />
 
         <Label 
-              Text="1"
+              Text=""
              Grid.Row="3" Grid.Column="1"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
@@ -70,7 +68,7 @@
              />
 
         <Label 
-              Text="1"
+              Text=""
              Grid.Row="4" Grid.Column="0"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
@@ -78,7 +76,7 @@
              />
 
         <Label 
-              Text="1"
+              Text=""
              Grid.Row="4" Grid.Column="1"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
@@ -87,7 +85,7 @@
 
 
         <Label 
-              Text="1"
+              Text=""
              Grid.Row="5" Grid.Column="0"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
@@ -95,7 +93,7 @@
              /> 
 
         <Label 
-              Text="1"
+              Text=""
              Grid.Row="5" Grid.Column="1"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
@@ -103,7 +101,7 @@
              />
 
         <Label 
-               Text="1"
+               Text=""
               Grid.Row="6" Grid.Column="0"
               VerticalOptions="Center"
               HorizontalOptions="Center" 
@@ -111,7 +109,7 @@
               />
 
         <Label 
-               Text="1"
+               Text=""
               Grid.Row="6" Grid.Column="1"
               VerticalOptions="Center"
               HorizontalOptions="Center" 
@@ -119,7 +117,7 @@
               />
 
         <Label 
-               Text="1"
+               Text=""
               Grid.Row="7" Grid.Column="0"
               VerticalOptions="Center"
               HorizontalOptions="Center" 
@@ -127,7 +125,7 @@
             />
 
         <Label 
-               Text="1"
+               Text=""
               Grid.Row="7" Grid.Column="1"
               VerticalOptions="Center"
               HorizontalOptions="Center" 
