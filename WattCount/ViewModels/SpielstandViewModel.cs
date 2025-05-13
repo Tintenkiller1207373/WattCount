@@ -11,47 +11,12 @@ namespace WattCount.ViewModels
     public partial class SpielstandViewModel : ObservableObject  
     {
 
-        // Team 1 Seite
 
         [ObservableProperty]
-        private string _a1;
+        int[] _teamA = new int[6];
 
         [ObservableProperty]
-        private string _a2;
-
-        [ObservableProperty]
-        private string _a3;
-
-        [ObservableProperty]
-        private string _a4;
-
-        [ObservableProperty]
-        private string _a5;
-
-        [ObservableProperty]
-        private string _a6;
-
-
-        // Team 2 Seite
-
-        [ObservableProperty]
-        private string _b1;
-
-        [ObservableProperty]
-        private string _b2;
-
-        [ObservableProperty]
-        private string _b3;
-
-        [ObservableProperty]
-        private string _b4;
-
-        [ObservableProperty]
-        private string _b5;
-
-        [ObservableProperty]
-        private string _b6;
-
+        int[] _teamB = new int[6];
 
         // Team 1 Punkte
         [RelayCommand]
