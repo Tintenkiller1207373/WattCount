@@ -33,13 +33,6 @@
            HorizontalOptions="Center" 
            />
 
-        <BoxView
-          HeightRequest="1"
-          BackgroundColor="Red"
-          HorizontalOptions="FillAndExpand"
-           Grid.ColumnSpan="2"
-          
-         />
 
         <Label 
               Text=""
