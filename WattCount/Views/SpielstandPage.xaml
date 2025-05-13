@@ -8,7 +8,7 @@
 
     
 
-    <Grid RowDefinitions="3*, 2*, 1*, 1*, 1*, 1*, 1*, 1*, 4*, 4*" ColumnDefinitions="1*, 1*">
+    <Grid RowDefinitions="3*, 2*, 1*, 1*, 1*, 1*, 1*, 1*,3*, 2*, 2*" ColumnDefinitions="1*, 1*">
 
 
         <Label
@@ -133,8 +133,44 @@
               HorizontalOptions="Center" 
               />
 
-        <HorizontalStackLayout Grid.Row="8" Grid.Column="0">
+        <HorizontalStackLayout Grid.Row="9" Grid.Column="0" HorizontalOptions="Center" Margin=" 0,0,0,0">
+            <Button Text="2" VerticalOptions="Center" 
+                Margin="0, 0, 10, 0" Command="{Binding addTwoACommand}"/>
+            <Button Text="3" VerticalOptions="Center" 
+                Margin="0, 0, 10, 0" Command="{Binding addThreeACommand}"/>
+            <Button Text="4" VerticalOptions="Center" 
+                Margin="0, 0, 10, 0" Command="{Binding addFourACommand}"/>
             
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Grid.Row="10" Grid.Column="0" HorizontalOptions="Center" Margin="0,0,0,5">
+            <Button Text="5" VerticalOptions="Center" 
+                 Margin="0, 0, 10, 0" Command="{Binding addFiveACommand}"/>
+            <Button Text="6" VerticalOptions="Center" 
+                 Margin="0, 0, 10, 0" Command="{Binding addSixACommand}"/>
+            <Button Text="7" VerticalOptions="Center" 
+                Margin="0, 0, 10, 0" Command="{Binding addSevenACommand}"/>
+
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Grid.Row="9" Grid.Column="1" HorizontalOptions="Center" Margin="0,0,0,0">
+            <Button Text="2" VerticalOptions="Center" 
+                Margin="0, 0, 10, 0" Command="{Binding addTwoBCommand}"/>
+            <Button Text="3" VerticalOptions="Center" 
+                Margin="0, 0, 10, 0" Command="{Binding addThreeBCommand}"/>
+            <Button Text="4" VerticalOptions="Center" 
+                Margin="0, 0, 10, 0" Command="{Binding addFourBCommand}"/>
+
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Grid.Row="10" Grid.Column="1" HorizontalOptions="Center" Margin="0,0,0,5">
+            <Button Text="5" VerticalOptions="Center" 
+                Margin="0, 0, 10, 0" Command="{Binding addFiveBCommand}"/>
+            <Button Text="6" VerticalOptions="Center" 
+                Margin="0, 0, 10, 0" Command="{Binding addSixBCommand}"/>
+            <Button Text="7" VerticalOptions="Center" 
+                Margin="0, 0, 10, 0" Command="{Binding addSevenBCommand}"/>
+
         </HorizontalStackLayout>
 
 
