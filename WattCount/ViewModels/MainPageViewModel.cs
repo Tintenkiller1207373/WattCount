@@ -11,7 +11,7 @@ namespace WattCount.ViewModels
     public partial class MainPageViewModel : ObservableObject {
 
         [RelayCommand]
-        public async Task goToSpielstandPage() {
+        public async Task GoToSpielstandPage() {
             await Shell.Current.GoToAsync("//SpielstandPage");
         }
 

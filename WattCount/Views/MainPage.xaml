@@ -22,7 +22,7 @@
             <Button
                 Text="START" 
                 HorizontalOptions="Center" 
-                Command="{Binding goToSpielstandPageCommand}"/>
+                Command="{Binding GoToSpielstandPageCommand}"/>
 
         </VerticalStackLayout>
     </ScrollView>
