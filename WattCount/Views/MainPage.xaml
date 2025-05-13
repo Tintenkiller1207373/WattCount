@@ -21,7 +21,8 @@
 
             <Button
                 Text="START" 
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" 
+                
         </VerticalStackLayout>
     </ScrollView>
 

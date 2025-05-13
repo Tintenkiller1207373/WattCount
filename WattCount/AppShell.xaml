@@ -13,8 +13,8 @@
         Route="MainPage" />
 
     <ShellContent
-    Title="Spielstand"
-    ContentTemplate="{DataTemplate views:SpielstandPage}"
-    Route="SpielstandPage" />
+        Title="Spielstand"
+        ContentTemplate="{DataTemplate views:SpielstandPage}"
+        Route="SpielstandPage" />
 
 </Shell>
