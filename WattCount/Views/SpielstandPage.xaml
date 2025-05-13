@@ -35,101 +35,89 @@
 
 
         <Label 
-              Text=""
+              Text="{Binding _teamA[0]}"
              Grid.Row="2" Grid.Column="0"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
-            BindingContext="{Binding _teamA[0]}"
  />
 
         <Label 
-             Text=""
+             Text="{Binding _teamB[0]}"
             Grid.Row="2" Grid.Column="1"
             VerticalOptions="Center"
             HorizontalOptions="Center" 
-            BindingContext="{Binding _teamB[0]}" 
             />
 
         <Label 
-              Text=""
+              Text="{Binding _teamA[1]}"
              Grid.Row="3" Grid.Column="0"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
-            BindingContext="{Binding _teamA[1]}"      
              />
 
         <Label 
-              Text=""
+              Text="{Binding _teamB[1]}"
              Grid.Row="3" Grid.Column="1"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
-            BindingContext="{Binding _teamB[1]}"
             
              />
 
         <Label 
-              Text=""
+              Text="{Binding _teamA[2]}"
              Grid.Row="4" Grid.Column="0"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
-            BindingContext="{Binding _teamA[2]}"
              />
 
         <Label 
-              Text=""
+              Text="{Binding _teamB[2]}"
              Grid.Row="4" Grid.Column="1"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
-            BindingContext="{Binding _teamB[2]}"
              />
 
 
         <Label 
-              Text=""
+              Text="{Binding _teamA[3]}"
              Grid.Row="5" Grid.Column="0"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
-            BindingContext="{Binding _teamA[3]}"           
              /> 
 
         <Label 
-              Text=""
+              Text="{Binding _teamB[3]}"
              Grid.Row="5" Grid.Column="1"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
-            BindingContext="{Binding _teamB[3]}"
              />
 
         <Label 
-               Text=""
+               Text="{Binding _teamA[4]}"
               Grid.Row="6" Grid.Column="0"
               VerticalOptions="Center"
               HorizontalOptions="Center" 
-                BindingContext="{Binding _teamA[4]}"
               />
 
         <Label 
-               Text=""
+               Text="{Binding _teamB[4]}"
               Grid.Row="6" Grid.Column="1"
               VerticalOptions="Center"
               HorizontalOptions="Center" 
-                BindingContext="{Binding _teamB[4]}"
               />
 
         <Label 
-               Text=""
+               Text="{Binding _teamA[5]}"
               Grid.Row="7" Grid.Column="0"
               VerticalOptions="Center"
               HorizontalOptions="Center" 
-                BindingContext="{Binding _teamA[5]}"
             />
 
         <Label 
-               Text=""
+               Text="{Binding _teamB[5]}"
               Grid.Row="7" Grid.Column="1"
               VerticalOptions="Center"
               HorizontalOptions="Center" 
-                BindingContext="{Binding _teamB[5]}"
               />
 
         <HorizontalStackLayout Grid.Row="9" Grid.Column="0" HorizontalOptions="Center" Margin=" 0,0,0,0">
