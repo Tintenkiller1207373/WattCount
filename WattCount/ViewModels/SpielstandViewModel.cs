@@ -11,97 +11,135 @@ namespace WattCount.ViewModels
     public partial class SpielstandViewModel : ObservableObject  
     {
 
-        // Team 1 Seite
 
         [ObservableProperty]
-        private string _a1;
+        int[] _teamA = new int[6];
 
         [ObservableProperty]
-        private string _a2;
-
-        [ObservableProperty]
-        private string _a3;
-
-        [ObservableProperty]
-        private string _a4;
-
-        [ObservableProperty]
-        private string _a5;
-
-        [ObservableProperty]
-        private string _a6;
-
-
-        // Team 2 Seite
-
-        [ObservableProperty]
-        private string _b1;
-
-        [ObservableProperty]
-        private string _b2;
-
-        [ObservableProperty]
-        private string _b3;
-
-        [ObservableProperty]
-        private string _b4;
-
-        [ObservableProperty]
-        private string _b5;
-
-        [ObservableProperty]
-        private string _b6;
+        int[] _teamB = new int[6];
 
 
         // Team 1 Punkte
         [RelayCommand]
         public async Task AddTwoA() {
+            for (int i = 0; i < TeamA.Length; i++) {
+                if (TeamA[i] == 0) {
+                    TeamA[i] = 2;
+                    break;
+                }
+            }
         }
 
         [RelayCommand]
         public async Task AddThreeA() {
+            for (int i = 0; i < TeamA.Length; i++) {
+                if (TeamA[i] == 0) {
+                    TeamA[i] = 3;
+                    break;
+                }
+            }
         }
 
         [RelayCommand]
         public async Task AddFourA() {
+            for (int i = 0; i < TeamA.Length; i++) {
+                if (TeamA[i] == 0) {
+                    TeamA[i] = 4;
+                    break;
+                }
+            }
         }
 
         [RelayCommand]
         public async Task AddFiveA() {
+            for (int i = 0; i < TeamA.Length; i++) {
+                if (TeamA[i] == 0) {
+                    TeamA[i] = 5;
+                    break;
+                }
+            }
         }
 
         [RelayCommand]
         public async Task AddSixA() {
+            for (int i = 0; i < TeamA.Length; i++) {
+                if (TeamA[i] == 0) {
+                    TeamA[i] = 6;
+                    break;
+                }
+            }
         }
 
         [RelayCommand]
         public async Task AddSevenA() {
+            for (int i = 0; i < TeamA.Length; i++) {
+                if (TeamA[i] == 0) {
+                    TeamA[i] = 7;
+                    break;
+                }
+            }
         }
 
 
         // Team 2 Punkte
         [RelayCommand]
         public async Task AddTwoB() {
+            for (int i = 0; i < TeamB.Length; i++) {
+                if (TeamB[i] == 0) {
+                    TeamB[i] = 2;
+                    break;
+                }
+            }
         }
 
         [RelayCommand]
         public async Task AddThreeB() {
+            for (int i = 0; i < TeamB.Length; i++) {
+                if (TeamB[i] == 0) {
+                    TeamB[i] = 3;
+                    break;
+                }
+            }
         }
 
         [RelayCommand]
         public async Task AddFourB() {
+            for (int i = 0; i < TeamB.Length; i++) {
+                if (TeamB[i] == 0) {
+                    TeamB[i] = 4;
+                    break;
+                }
+            }
         }
 
         [RelayCommand]
         public async Task AddFiveB() {
+            for (int i = 0; i < TeamB.Length; i++) {
+                if (TeamB[i] == 0) {
+                    TeamB[i] = 5;
+                    break;
+                }
+            }
         }
 
         [RelayCommand]
         public async Task AddSixB() {
+            for (int i = 0; i < TeamB.Length; i++) {
+                if (TeamB[i] == 0) {
+                    TeamB[i] = 6;
+                    break;
+                }
+            }
         }
 
         [RelayCommand]
         public async Task AddSevenB() {
+            for (int i = 0; i < TeamB.Length; i++) {
+                if (TeamB[i] == 0) {
+                    TeamB[i] = 7;
+                    break;
+                }
+            }
         }
 
 
