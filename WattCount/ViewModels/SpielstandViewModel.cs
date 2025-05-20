@@ -274,6 +274,11 @@ namespace WattCount.ViewModels
                 IsVisibleGestrichenA = true;
             }
 
+            //Gewinn
+            if (_teamA.Sum() >= 11) {
+                resetGame();
+            }
+
         }
 
         private void UpdateTeamB() {
@@ -311,7 +316,45 @@ namespace WattCount.ViewModels
             if (_teamB.Sum() >= 9) {
                 IsVisibleGestrichenB = true;
             }
+
+            //Gewinn
+            if(_teamB.Sum() >= 11) {
+                resetGame();
+            }
+        }
+
+        //Spiel  zurücksetzen
+        private void resetGame() {
+            for (int i = 0; i < _teamA.Length; i++) {
+                _teamA[i] = 0;
+            }
+
+            for (int i = 0; i < _teamB.Length; i++) {
+                _teamB[i] = 0;
+            }
+
+            IsVisibleGestrichenA = false;
+            IsVisibleGestrichenB = false;
+
+            IsVisibleA1 = false;
+            IsVisibleA2 = false;
+            IsVisibleA3 = false;
+            IsVisibleA4 = false;
+            IsVisibleA5 = false;
+            IsVisibleA6 = false;
+
+            IsVisibleB1 = false;
+            IsVisibleB2 = false;
+            IsVisibleB3 = false;
+            IsVisibleB4 = false;
+            IsVisibleB5 = false;
+            IsVisibleB6 = false;
+
+
+            UpdateTeamA();
+            UpdateTeamB();
+
         }
 
     }
-}
+    }
