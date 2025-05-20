@@ -34,6 +34,28 @@
            HorizontalOptions="Center" 
            />
 
+        <Line
+            
+            IsVisible="{Binding IsVisibleGestrichenA}"
+            Y2="2000"
+            Stroke="White"
+            Grid.RowSpan="6"
+            HorizontalOptions="Center"
+            Grid.Column="0"
+            Grid.Row="2"
+            />
+
+        <Line
+    
+            IsVisible="{Binding IsVisibleGestrichenB}"
+            Y2="2000"
+            Stroke="White"
+            Grid.RowSpan="6"
+            HorizontalOptions="Center"
+            Grid.Column="1"
+            Grid.Row="2"
+            />
+
         <Line 
             
               X2="2000"
