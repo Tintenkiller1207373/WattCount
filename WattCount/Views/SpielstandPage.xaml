@@ -8,8 +8,9 @@
 
     
 
-    <Grid RowDefinitions="3*, 2*, 1*, 1*, 1*, 1*, 1*, 1*,3*, 2*, 2*" ColumnDefinitions="1*, 1*">
+    <Grid RowDefinitions="3*, 2*,1*, 1*, 1*, 1*, 1*, 1*, 1*,3*, 2*, 2*" ColumnDefinitions="1*, 1*">
 
+           
 
         <Label
         Text="WattCount"
@@ -33,31 +34,53 @@
            HorizontalOptions="Center" 
            />
 
+        <Line 
+            
+              X2="2000"
+              
+              Stroke="Red" 
+            Grid.ColumnSpan="2"
+            Grid.Row="2"
+            
+        />
+
+        <Line 
+     
+           Y2="2000"
+       
+           Stroke="Red" 
+         Grid.RowSpan="10"
+            Grid.Column="1"
+            Grid.Row="1"
+         
+     
+     /> 
+
 
         <Label 
               Text="{Binding _teamA[0]}"
-             Grid.Row="2" Grid.Column="0"
+             Grid.Row="3" Grid.Column="0"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
  />
 
         <Label 
              Text="{Binding _teamB[0]}"
-            Grid.Row="2" Grid.Column="1"
+            Grid.Row="3" Grid.Column="1"
             VerticalOptions="Center"
             HorizontalOptions="Center" 
             />
 
         <Label 
               Text="{Binding _teamA[1]}"
-             Grid.Row="3" Grid.Column="0"
+             Grid.Row="4" Grid.Column="0"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
              />
 
         <Label 
               Text="{Binding _teamB[1]}"
-             Grid.Row="3" Grid.Column="1"
+             Grid.Row="4" Grid.Column="1"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
             
@@ -65,14 +88,14 @@
 
         <Label 
               Text="{Binding _teamA[2]}"
-             Grid.Row="4" Grid.Column="0"
+             Grid.Row="5" Grid.Column="0"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
              />
 
         <Label 
               Text="{Binding _teamB[2]}"
-             Grid.Row="4" Grid.Column="1"
+             Grid.Row="5" Grid.Column="1"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
              />
@@ -80,47 +103,47 @@
 
         <Label 
               Text="{Binding _teamA[3]}"
-             Grid.Row="5" Grid.Column="0"
+             Grid.Row="6" Grid.Column="0"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
              /> 
 
         <Label 
               Text="{Binding _teamB[3]}"
-             Grid.Row="5" Grid.Column="1"
+             Grid.Row="6" Grid.Column="1"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
              />
 
         <Label 
                Text="{Binding _teamA[4]}"
-              Grid.Row="6" Grid.Column="0"
+              Grid.Row="7" Grid.Column="0"
               VerticalOptions="Center"
               HorizontalOptions="Center" 
               />
 
         <Label 
                Text="{Binding _teamB[4]}"
-              Grid.Row="6" Grid.Column="1"
+              Grid.Row="7" Grid.Column="1"
               VerticalOptions="Center"
               HorizontalOptions="Center" 
               />
 
         <Label 
                Text="{Binding _teamA[5]}"
-              Grid.Row="7" Grid.Column="0"
+              Grid.Row="8" Grid.Column="0"
               VerticalOptions="Center"
               HorizontalOptions="Center" 
             />
 
         <Label 
                Text="{Binding _teamB[5]}"
-              Grid.Row="7" Grid.Column="1"
+              Grid.Row="8" Grid.Column="1"
               VerticalOptions="Center"
               HorizontalOptions="Center" 
               />
 
-        <HorizontalStackLayout Grid.Row="9" Grid.Column="0" HorizontalOptions="Center" Margin=" 0,0,0,0">
+        <HorizontalStackLayout Grid.Row="10" Grid.Column="0" HorizontalOptions="Center" Margin=" 0,0,0,0">
             <Button Text="2" VerticalOptions="Center" 
                 Margin="0, 0, 10, 0" Command="{Binding AddTwoACommand}"/>
             <Button Text="3" VerticalOptions="Center" 
@@ -130,7 +153,7 @@
             
         </HorizontalStackLayout>
 
-        <HorizontalStackLayout Grid.Row="10" Grid.Column="0" HorizontalOptions="Center" Margin="0,0,0,5">
+        <HorizontalStackLayout Grid.Row="11" Grid.Column="0" HorizontalOptions="Center" Margin="0,0,0,5">
             <Button Text="5" VerticalOptions="Center" 
                  Margin="0, 0, 10, 0" Command="{Binding AddFiveACommand}"/>
             <Button Text="6" VerticalOptions="Center" 
@@ -140,7 +163,7 @@
 
         </HorizontalStackLayout>
 
-        <HorizontalStackLayout Grid.Row="9" Grid.Column="1" HorizontalOptions="Center" Margin="0,0,0,0">
+        <HorizontalStackLayout Grid.Row="10" Grid.Column="1" HorizontalOptions="Center" Margin="0,0,0,0">
             <Button Text="2" VerticalOptions="Center" 
                 Margin="0, 0, 10, 0" Command="{Binding AddTwoBCommand}"/>
             <Button Text="3" VerticalOptions="Center" 
@@ -150,7 +173,7 @@
 
         </HorizontalStackLayout>
 
-        <HorizontalStackLayout Grid.Row="10" Grid.Column="1" HorizontalOptions="Center" Margin="0,0,0,5">
+        <HorizontalStackLayout Grid.Row="11" Grid.Column="1" HorizontalOptions="Center" Margin="0,0,0,5">
             <Button Text="5" VerticalOptions="Center" 
                 Margin="0, 0, 10, 0" Command="{Binding AddFiveBCommand}"/>
             <Button Text="6" VerticalOptions="Center" 
