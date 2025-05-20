@@ -35,28 +35,28 @@
 
 
         <Label 
-              Text="{Binding _teamA[0]}"
+              Text="{Binding _a1}"
              Grid.Row="2" Grid.Column="0"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
  />
 
         <Label 
-             Text="{Binding _teamB[0]}"
+             Text="{Binding _b1}"
             Grid.Row="2" Grid.Column="1"
             VerticalOptions="Center"
             HorizontalOptions="Center" 
             />
 
         <Label 
-              Text="{Binding _teamA[1]}"
+              Text="{Binding _a2}"
              Grid.Row="3" Grid.Column="0"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
              />
 
         <Label 
-              Text="{Binding _teamB[1]}"
+              Text="{Binding _b2}"
              Grid.Row="3" Grid.Column="1"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
@@ -64,14 +64,14 @@
              />
 
         <Label 
-              Text="{Binding _teamA[2]}"
+              Text="{Binding _a3}"
              Grid.Row="4" Grid.Column="0"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
              />
 
         <Label 
-              Text="{Binding _teamB[2]}"
+              Text="{Binding _b3}"
              Grid.Row="4" Grid.Column="1"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
@@ -79,42 +79,42 @@
 
 
         <Label 
-              Text="{Binding _teamA[3]}"
+              Text="{Binding _a4}"
              Grid.Row="5" Grid.Column="0"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
              /> 
 
         <Label 
-              Text="{Binding _teamB[3]}"
+              Text="{Binding _b4}"
              Grid.Row="5" Grid.Column="1"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
              />
 
         <Label 
-               Text="{Binding _teamA[4]}"
+               Text="{Binding _a5}"
               Grid.Row="6" Grid.Column="0"
               VerticalOptions="Center"
               HorizontalOptions="Center" 
               />
 
         <Label 
-               Text="{Binding _teamB[4]}"
+               Text="{Binding _b5}"
               Grid.Row="6" Grid.Column="1"
               VerticalOptions="Center"
               HorizontalOptions="Center" 
               />
 
         <Label 
-               Text="{Binding _teamA[5]}"
+               Text="{Binding _a6}"
               Grid.Row="7" Grid.Column="0"
               VerticalOptions="Center"
               HorizontalOptions="Center" 
             />
 
         <Label 
-               Text="{Binding _teamB[5]}"
+               Text="{Binding _b6}"
               Grid.Row="7" Grid.Column="1"
               VerticalOptions="Center"
               HorizontalOptions="Center" 

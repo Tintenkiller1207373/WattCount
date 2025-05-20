@@ -12,12 +12,49 @@ namespace WattCount.ViewModels
     {
 
 
-        [ObservableProperty]
         int[] _teamA = new int[6];
 
-        [ObservableProperty]
         int[] _teamB = new int[6];
 
+
+        //TEAM A
+        [ObservableProperty]
+        int _a1;
+
+        [ObservableProperty]
+        int _a2;
+
+        [ObservableProperty]
+        int _a3;
+
+        [ObservableProperty]
+        int _a4;
+
+        [ObservableProperty]
+        int _a5;
+
+        [ObservableProperty]
+        int _a6;
+
+
+        //TEAM B
+        [ObservableProperty]
+        int _b1;
+
+        [ObservableProperty]
+        int _b2;
+
+        [ObservableProperty]
+        int _b3;
+
+        [ObservableProperty]
+        int _b4;
+
+        [ObservableProperty]
+        int _b5;
+
+        [ObservableProperty]
+        int _b6;
 
         // Team 1 Punkte
         [RelayCommand]
@@ -142,6 +179,7 @@ namespace WattCount.ViewModels
             }
         }
 
+      
 
     }
 }
