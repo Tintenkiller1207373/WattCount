@@ -16,6 +16,11 @@ namespace WattCount.ViewModels
 
         int[] _teamB = new int[6];
 
+        [ObservableProperty]
+        bool _isVisibleGestrichenA = false;
+
+        [ObservableProperty]
+        bool _isVisibleGestrichenB = false;
 
         //TEAM A
         [ObservableProperty]
@@ -263,6 +268,12 @@ namespace WattCount.ViewModels
             if (A6 > 0) {
                 IsVisibleA6 = true;
             }
+
+            //Gestrichen
+            if (_teamA.Sum() >= 9) {
+                IsVisibleGestrichenA = true;
+            }
+
         }
 
         private void UpdateTeamB() {
@@ -294,6 +305,11 @@ namespace WattCount.ViewModels
             B6 = _teamB[5];
             if (B6 > 0) {
                 IsVisibleB6 = true;
+            }
+
+            //Gestrichen
+            if (_teamB.Sum() >= 9) {
+                IsVisibleGestrichenB = true;
             }
         }
 
