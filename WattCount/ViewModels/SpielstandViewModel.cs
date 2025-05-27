@@ -2,15 +2,50 @@
 using CommunityToolkit.Mvvm.Input;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WattCount.Models;
 
 namespace WattCount.ViewModels
 {
     public partial class SpielstandViewModel : ObservableObject  
     {
 
+        [ObservableProperty]
+        ObservableCollection<Value> _teamA = new();
+
+        [ObservableProperty]
+        List<int> _teamB = new List<int>();
+
+        [ObservableProperty]
+        bool _isVisibleGestrichenA = false;
+
+        [ObservableProperty]
+        bool _isVisibleGestrichenB = false;
+
+
+        [ObservableProperty]
+        List<bool> _isVisibleA = new List<bool>();
+
+        [ObservableProperty]
+        List<bool> _isVisibleB = new List<bool>();
+
+        public SpielstandViewModel() {
+            TeamA.Add(new Value() { Val = 2 });
+            TeamA.Add(new Value() { Val = 5 });
+
+        }
+
+
+        [RelayCommand]
+        public async Task Add(string id) {
+            TeamA.Add(new Value() { Val = 7});
+            Console.WriteLine();
+        }
+
+        /*
 
         int[] _teamA = new int[6];
 
@@ -23,7 +58,7 @@ namespace WattCount.ViewModels
         bool _isVisibleGestrichenB = false;
 
         //TEAM A
-        [ObservableProperty]
+67        [ObservableProperty]
         int _a1;
 
         [ObservableProperty]
@@ -355,6 +390,9 @@ namespace WattCount.ViewModels
             UpdateTeamB();
 
         }
+        */
 
     }
+
+        
     }

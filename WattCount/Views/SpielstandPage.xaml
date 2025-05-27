@@ -76,12 +76,25 @@
             Grid.Row="1"
          
      
-     /> 
+     />
+
+        <CollectionView ItemsSource="{Binding TeamA}">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Span="1" Orientation="Vertical" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding Val}">
+                        
+                    </Label>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
 
 
         <Label 
-             Text="{Binding A1}"
-             IsVisible="{Binding IsVisibleA1}"
+             Text="{Binding TeamA[0].Val}"   
+             IsVisible="True"
              Grid.Row="2" Grid.Column="0"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
@@ -96,8 +109,8 @@
             />
 
         <Label 
-              Text="{Binding A2}"
-               IsVisible="{Binding IsVisibleA2}"
+              Text="{Binding TeamA[1]}"
+               IsVisible="true"
              Grid.Row="3" Grid.Column="0"
              VerticalOptions="Center"
              HorizontalOptions="Center" 
@@ -179,41 +192,41 @@
 
         <HorizontalStackLayout Grid.Row="10" Grid.Column="0" HorizontalOptions="Center" Margin=" 0,0,0,0">
             <Button Text="2" VerticalOptions="Center" 
-                Margin="0, 0, 10, 0" Command="{Binding AddTwoACommand}"/>
+                Margin="0, 0, 10, 0" Command="{Binding AddCommand}" CommandParameter="A2"/>
             <Button Text="3" VerticalOptions="Center" 
-                Margin="0, 0, 10, 0" Command="{Binding AddThreeACommand}"/>
+                Margin="0, 0, 10, 0" Command="{Binding AddCommand}" CommandParameter="A3"/>
             <Button Text="4" VerticalOptions="Center" 
-                Margin="0, 0, 10, 0" Command="{Binding AddFourACommand}"/>
+                Margin="0, 0, 10, 0" Command="{Binding AddCommand}" CommandParameter="A4"/>
             
         </HorizontalStackLayout>
 
         <HorizontalStackLayout Grid.Row="11" Grid.Column="0" HorizontalOptions="Center" Margin="0,0,0,5">
             <Button Text="5" VerticalOptions="Center" 
-                 Margin="0, 0, 10, 0" Command="{Binding AddFiveACommand}"/>
+                 Margin="0, 0, 10, 0" Command="{Binding AddCommand}" CommandParameter="A5"/>
             <Button Text="6" VerticalOptions="Center" 
-                 Margin="0, 0, 10, 0" Command="{Binding AddSixACommand}"/>
+                 Margin="0, 0, 10, 0" Command="{Binding AddCommand}" CommandParameter="A6"/>
             <Button Text="7" VerticalOptions="Center" 
-                Margin="0, 0, 10, 0" Command="{Binding AddSevenACommand}"/>
+                Margin="0, 0, 10, 0" Command="{Binding AddCommand}" CommandParameter="A7"/>
 
         </HorizontalStackLayout>
 
         <HorizontalStackLayout Grid.Row="10" Grid.Column="1" HorizontalOptions="Center" Margin="0,0,0,0">
             <Button Text="2" VerticalOptions="Center" 
-                Margin="0, 0, 10, 0" Command="{Binding AddTwoBCommand}"/>
+                Margin="0, 0, 10, 0" Command="{Binding AddCommand}" CommandParameter="B2"/>
             <Button Text="3" VerticalOptions="Center" 
-                Margin="0, 0, 10, 0" Command="{Binding AddThreeBCommand}"/>
+                Margin="0, 0, 10, 0" Command="{Binding AddCommand}" CommandParameter="B3"/>
             <Button Text="4" VerticalOptions="Center" 
-                Margin="0, 0, 10, 0" Command="{Binding AddFourBCommand}"/>
+                Margin="0, 0, 10, 0" Command="{Binding AddCommand}" CommandParameter="B4"/>
 
         </HorizontalStackLayout>
 
         <HorizontalStackLayout Grid.Row="11" Grid.Column="1" HorizontalOptions="Center" Margin="0,0,0,5">
             <Button Text="5" VerticalOptions="Center" 
-                Margin="0, 0, 10, 0" Command="{Binding AddFiveBCommand}"/>
+                Margin="0, 0, 10, 0" Command="{Binding AddCommand}" CommandParameter="B5"/>
             <Button Text="6" VerticalOptions="Center" 
-                Margin="0, 0, 10, 0" Command="{Binding AddSixBCommand}"/>
+                Margin="0, 0, 10, 0" Command="{Binding AddCommand}" CommandParameter="B6"/>
             <Button Text="7" VerticalOptions="Center" 
-                Margin="0, 0, 10, 0" Command="{Binding AddSevenBCommand}"/>
+                Margin="0, 0, 10, 0" Command="{Binding AddCommand}" CommandParameter="B7"/>
 
         </HorizontalStackLayout>
 
