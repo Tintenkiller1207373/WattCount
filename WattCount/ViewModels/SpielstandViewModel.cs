@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using MauiBasics.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,13 @@ namespace WattCount.ViewModels
     public partial class SpielstandViewModel : ObservableObject  
     {
 
+
+        private readonly DbManagerSQLite _dbManagerSQLite;
+
+
+        public SpielstandViewModel(DbManagerSQLite dbManagerSQLite) {
+            this._dbManagerSQLite = dbManagerSQLite;
+        }
 
         int[] _teamA = new int[6];
 

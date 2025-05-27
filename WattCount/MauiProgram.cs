@@ -2,6 +2,7 @@
 using WattCount.ViewModels;
 using WattCount.Views;
 using CommunityToolkit.Maui;
+using MauiBasics.Services;
 
 namespace WattCount;
 public static class MauiProgram
@@ -22,6 +23,8 @@ public static class MauiProgram
 
 		builder.Services.AddTransient<SpielstandPage>();
         builder.Services.AddTransient<SpielstandViewModel>();
+
+        builder.Services.AddDbContext<DbManagerSQLite>();
 
         return builder.Build();
     }

@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace WattCount.Models
 {
-    class Teams
+    public class Teams
     {
-        public int TeamId { get; set; }
+        public int TeamsId { get; set; }
 
         public string TeamName { get; set; }
         public int Bummerlen { get; set; }
 
         public Teams() : this(0, "", 0) { }
-        public Teams(int teamId, string teamName, int bummerlen) {
-            TeamId = teamId;
+        public Teams(int teamsId, string teamName, int bummerlen) {
+            TeamsId = teamsId;
             TeamName = teamName;
             Bummerlen = bummerlen;
         }

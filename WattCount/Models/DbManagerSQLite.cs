@@ -9,9 +9,9 @@ using WattCount.Models;
 
 namespace MauiBasics.Services {
 
-    
+
     public class DbManagerSQLite : DbContext {
-       
+
         public DbSet<Teams> Teams { get; set; }
 
         public DbManagerSQLite() {
@@ -20,16 +20,13 @@ namespace MauiBasics.Services {
             this.Database.EnsureCreated();
         }
 
-
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
             string dbPath = Path.Combine(FileSystem.AppDataDirectory, "app_db_local.sqlite");
 
-            // C:\Users\Thomas\AppData\Local\User Name\com.companyname.mauibasics\Data\app_db_local.sqlite
+            // C:\Users\Thomas\AppData\Local\User Name\com.companyname.wattcount\Data\app_db_local.sqlite
 
             optionsBuilder.UseSqlite($"Filename={dbPath}");
         }
 
     }
-
 }
