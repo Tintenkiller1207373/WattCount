@@ -18,7 +18,7 @@ namespace WattCount.ViewModels
         ObservableCollection<Value> _teamA = new();
 
         [ObservableProperty]
-        List<int> _teamB = new List<int>();
+        ObservableCollection<int> _teamB = new();
 
         [ObservableProperty]
         bool _isVisibleGestrichenA = false;
@@ -37,12 +37,15 @@ namespace WattCount.ViewModels
             TeamA.Add(new Value() { Val = 2 });
             TeamA.Add(new Value() { Val = 5 });
 
+            TeamB.Add(2);
+            TeamB.Add(3);
+
         }
 
 
         [RelayCommand]
         public async Task Add(string id) {
-            TeamA.Add(new Value() { Val = 7});
+            TeamB.Add(2);
             Console.WriteLine();
         }
 

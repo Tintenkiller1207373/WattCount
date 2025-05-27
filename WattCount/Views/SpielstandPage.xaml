@@ -98,7 +98,7 @@
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Label Text="{Binding Val}" HorizontalOptions="Center" >
+                    <Label Text="{Binding .}" HorizontalOptions="Center" >
 
                     </Label>
                 </DataTemplate>
