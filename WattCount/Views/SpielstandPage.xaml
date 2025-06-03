@@ -78,15 +78,16 @@
      
      />
 
-        <CollectionView ItemsSource="{Binding TeamA}" Grid.Column="0" Grid.Row="3" >
+        <CollectionView ItemsSource="{Binding TeamA}" Grid.Column="0" Grid.Row="3">
             <CollectionView.ItemsLayout>
                 <GridItemsLayout Span="1" Orientation="Vertical" />
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Label Text="{Binding Val}" HorizontalOptions="Center" >
-                        
-                    </Label>
+                    <HorizontalStackLayout BackgroundColor="Red" HorizontalOptions="Center">
+                        <Label Text="{Binding .}"  VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                    
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
@@ -98,9 +99,9 @@
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Label Text="{Binding .}" HorizontalOptions="Center" >
-
-                    </Label>
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                        <Label Text="{Binding .}"  VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
