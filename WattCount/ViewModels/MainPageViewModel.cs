@@ -12,7 +12,7 @@ namespace WattCount.ViewModels
 
         [RelayCommand]
         public async Task GoToSpielstandPage() {
-            await Shell.Current.GoToAsync("//SpielstandPage");
+            await Shell.Current.GoToAsync("//SelectTeamPage");
         }
 
 

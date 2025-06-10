@@ -24,6 +24,9 @@ public static class MauiProgram
 		builder.Services.AddTransient<SpielstandPage>();
         builder.Services.AddTransient<SpielstandViewModel>();
 
+        builder.Services.AddTransient<SelectTeamPage>();
+        builder.Services.AddTransient<SelectTeamViewModel>();
+
         builder.Services.AddDbContext<DbManagerSQLite>();
 
         return builder.Build();

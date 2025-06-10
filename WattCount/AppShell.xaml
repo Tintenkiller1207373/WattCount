@@ -13,8 +13,17 @@
         Route="MainPage" />
 
     <ShellContent
+     Title="TeamAuswahl"
+     ContentTemplate="{DataTemplate views:SelectTeamPage}"
+     Route="SelectTeamPage" 
+     />
+    
+
+    <ShellContent
         Title="Spielstand"
         ContentTemplate="{DataTemplate views:SpielstandPage}"
         Route="SpielstandPage" />
+
+   
 
 </Shell>
