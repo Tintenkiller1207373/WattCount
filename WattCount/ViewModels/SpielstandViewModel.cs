@@ -46,11 +46,11 @@ namespace WattCount.ViewModels
             else if (id.StartsWith("B")) {
                 TeamB.Add(index);
             }
-            updateScore();
+            UpdateScore();
         }
 
 
-        private void updateScore() {
+        private void UpdateScore() {
             bool win = false;
             if(_teamA.Sum() >= 9) {
                 IsVisibleGestrichenA = true;
