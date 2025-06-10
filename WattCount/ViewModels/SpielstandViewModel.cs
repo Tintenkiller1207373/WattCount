@@ -51,7 +51,7 @@ namespace WattCount.ViewModels
 
         [RelayCommand]
         public async Task Reset() {
-            resetGame();
+            ResetGame();
         }
 
 
@@ -70,11 +70,11 @@ namespace WattCount.ViewModels
                 }
             }
             if (win) {
-                resetGame();
+                ResetGame();
             }
         }
 
-        private void resetGame() {
+        private void ResetGame() {
             _teamA.Clear();
             _teamB.Clear();
             IsVisibleGestrichenA = false;
