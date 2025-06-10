@@ -84,7 +84,7 @@
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <HorizontalStackLayout BackgroundColor="Red" HorizontalOptions="Center">
+                    <HorizontalStackLayout HorizontalOptions="Center">
                         <Label Text="{Binding .}"  VerticalOptions="Center"/>
                     </HorizontalStackLayout>
                     
