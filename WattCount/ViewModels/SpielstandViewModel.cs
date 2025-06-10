@@ -11,8 +11,11 @@ using WattCount.Models;
 
 namespace WattCount.ViewModels
 {
-    public partial class SpielstandViewModel : ObservableObject  
-    {
+    public partial class SpielstandViewModel : ObservableObject {
+
+        
+            
+
 
         [ObservableProperty]
         ObservableCollection<int> _teamA = new();
@@ -45,6 +48,7 @@ namespace WattCount.ViewModels
             }
             updateScore();
         }
+
 
         private void updateScore() {
             bool win = false;
