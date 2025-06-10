@@ -49,6 +49,11 @@ namespace WattCount.ViewModels
             updateScore();
         }
 
+        [RelayCommand]
+        public async Task Reset() {
+            resetGame();
+        }
+
 
         private void updateScore() {
             bool win = false;

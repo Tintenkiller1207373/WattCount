@@ -71,7 +71,7 @@
            Y2="2000"
        
            Stroke="White" 
-         Grid.RowSpan="10"
+         Grid.RowSpan="4"
             Grid.Column="1"
             Grid.Row="1"
          
@@ -126,6 +126,12 @@
                  Margin="0, 0, 10, 0" Command="{Binding AddCommand}" CommandParameter="A6"/>
             <Button Text="7" VerticalOptions="Center" 
                 Margin="0, 0, 10, 0" Command="{Binding AddCommand}" CommandParameter="A7"/>
+
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" >
+            <Button Text="Reset Points" VerticalOptions="Center" 
+             Command="{Binding ResetCommand}"/>
 
         </HorizontalStackLayout>
 
