@@ -23,7 +23,7 @@ namespace MauiBasics.Services {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
             string dbPath = Path.Combine(FileSystem.AppDataDirectory, "app_db_local.sqlite");
 
-            // C:\Users\Thomas\AppData\Local\User Name\com.companyname.wattcount\Data\app_db_local.sqlite
+            // C:\\Users\\fabia\\AppData\\Local\\User Name\\com.companyname.wattcount\\Data\\app_db_local.sqlite
 
             optionsBuilder.UseSqlite($"Filename={dbPath}");
         }
