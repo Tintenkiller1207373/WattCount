@@ -63,7 +63,7 @@ namespace WattCount.ViewModels
                     win = true;
                 }
             }
-            else if(_teamB.Sum() >= 9){
+            if(_teamB.Sum() >= 9){
                 IsVisibleGestrichenB = true;
                 if (_teamB.Sum() >= 11) {
                     win = true;
