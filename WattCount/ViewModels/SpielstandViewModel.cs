@@ -26,8 +26,13 @@ namespace WattCount.ViewModels
         [ObservableProperty]
         bool _isVisibleGestrichenB = false;
 
+        private DbManagerSQLite _dbManagerSQLite;
 
-       
+        public SpielstandViewModel(DbManagerSQLite dbManagerSQLite) {
+            this._dbManagerSQLite = dbManagerSQLite;
+        }
+
+
 
         [RelayCommand]
         public async Task Add(string id) {
