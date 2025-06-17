@@ -15,7 +15,7 @@
             Grid.Column="0"
             Grid.Row="0"
             />
-
+   
         <Label
             Text="Teamnamen eingeben"
             HorizontalOptions="End"
@@ -25,17 +25,34 @@
             Grid.Row="1" />
 
         <Entry
-            Text="{Binding TeamName}"
+            Text="{Binding Name}"
             Placeholder="Tulln"
             Grid.Row="1" Grid.Column="1"
-             />
+     />
 
-        <HorizontalStackLayout Grid.Row="2" Grid.Column="1" HorizontalOptions="Center" Margin="0,0,0,0" Grid.ColumnSpan="4">
+        <HorizontalStackLayout Grid.Row="2" Grid.Column="0" HorizontalOptions="Center" Grid.ColumnSpan="4">
             <Button Text="Team registrieren" VerticalOptions="Center" 
          Margin="0, 0, 10, 0" Command="{Binding SendCommand}" />
             
 
         </HorizontalStackLayout>
+
+        <CollectionView ItemsSource="{Binding Teams}"
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"
+                        SelectionMode="Single">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Padding="10">
+                        <Label Text="{Binding TeamName}"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
 
 
 
