@@ -8,5 +8,6 @@ namespace WattCount.ViewModels
 {
     public class SelectTeamViewModel
     {
+
     }
 }
